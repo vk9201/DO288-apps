@@ -12,9 +12,9 @@ config_s2i
 
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
-DATE=`date "+%b %d, %Y %H-%M-%S %p"`
+DATE=`date "+%Y-%m-%d"`
 echo "Today date is $DATE" >> ./info.html
-echo "Test pass" >> ./info.html
+echo "Test pass today" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
