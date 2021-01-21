@@ -11,12 +11,11 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-cp -Rf /tmp/src/*.html ./
-echo "ABc CDE FG"
-DATE=`date "+%y-%m-%d"`
+cp -Rf /tmp/src/*html ./
+echo " AA BB CC DD"
+DATE=`date "+%Y-%m-%d"`
 echo "Page built on $DATE" >> ./info.html
-echo "xyz cdf ght" >> ./info.html
-
+echo " Test is success" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
